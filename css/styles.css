@@ -30,13 +30,28 @@ html {
 * * * * * * * * * * * * * * * * * * * * * * * * * * */
 body {
     width: 100%;
+    background-color: rgba(105,108,115,255);
+}
+
+header {
+    width: 100vw; /* Always span the full width of the viewport */
+    background-image: url('/images/sunset.jpg');
+    background-size: 100% auto; /* Width always fills, height scales naturally */
+    background-position: center center; /* Keeps focus in the center horizontally */
+    background-repeat: no-repeat;
+}
+
+header a:link, header a:visited, header a:active, header a:hover {
+    color: wheat;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: none;
 }
 
 .container {
-    width: 800px;
+    width: 90%;
     margin: 35px auto;
     /* centers content */
-    border: 6px solid black;
+    border: 2px solid black;
     padding: 50px;
     background-color: white;
 }
@@ -72,31 +87,12 @@ p, figcaption, li, td {
 }
 
 .title {
-    /* text-shadow: 2px 2px 3px black ; */
-    background-image: linear-gradient(rgb(230, 190, 118), rgb(255, 41, 41));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
-
     font-family: 'Monaco';
-    /* font-style: italic; */
     text-align: center;
 
     font-size: 74px;
-    margin-top: 2.0em;
-    margin-bottom: 0;
-}
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * 
-    Links
-* * * * * * * * * * * * * * * * * * * * * * * * * * */
-a:link, a:visited {
-    color: blue;
-    text-decoration: none;
-}
-a:active, a:hover {
-    color: orangered;
-    text-decoration: underline;
+    padding-top: 1.0em;
+    padding-bottom: 1.0em;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * 
@@ -113,12 +109,6 @@ figure {
 figcaption {
     margin-top: 1.0rem;
     font-size: 14px;
-}
-.back1 {
-    background-image: url(../images/sunset.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * 
@@ -143,35 +133,44 @@ td {
     Page Specific
 * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-.date {
-    font-weight: bold;
-    font-style: italic;
-}
-.highlight {
-    background-color: bisque;
-    padding: 1.0rem 2.0rem 2.5rem;
-}
+
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * 
     Menu
 * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-.menu {
-    width: auto;
-    height: 5vw;
-    float: right;
-    text-align: center;
+nav {
+    background-color: snow;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
+    box-shadow: 3px 0 3px rgba(0, 0, 0, 0.35);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+    /*  Set position here */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 ul {
-    float: left;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-ul li {
-    list-style: none;
-    margin-left: 215px;
-    margin-top: -80px;
-    font-size: 1.1vw;
-    line-height: 2.0;
+li {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 7.5%;
+    width: 20%;
+    border-right: 1px solid darkgray;
+}
+
+li a:link, li a:visited {
+    color: black;
+    text-decoration: none;
+}
+li a:active, li a:hover {
+    color: gray;
+    text-decoration: underline;
 }
