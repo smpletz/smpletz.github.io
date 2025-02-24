@@ -1,3 +1,8 @@
+html, body{
+    padding: 0;
+    margin: 0;
+ }
+
 html {
     box-sizing: border-box;
 }
@@ -30,7 +35,7 @@ html {
 * * * * * * * * * * * * * * * * * * * * * * * * * * */
 body {
     width: 100%;
-    background-color: rgba(105,108,115,255);
+    background-color: black;
 }
 
 header {
@@ -39,6 +44,11 @@ header {
     background-size: 100% auto; /* Width always fills, height scales naturally */
     background-position: center center; /* Keeps focus in the center horizontally */
     background-repeat: no-repeat;
+
+    text-align: center;
+    font-size: 74px;
+    padding-top: 1.0em;
+    padding-bottom: 1.0em;
 }
 
 header a:link, header a:visited, header a:active, header a:hover {
@@ -47,13 +57,22 @@ header a:link, header a:visited, header a:active, header a:hover {
     text-decoration: none;
 }
 
-.container {
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+#container {
     width: 90%;
     margin: 35px auto;
-    /* centers content */
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 50px;
-    background-color: white;
+    background-color: black;
 }
 
 .group:after { 
@@ -79,12 +98,27 @@ header a:link, header a:visited, header a:active, header a:hover {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Times New Roman', Times, serif;
+    color: white
 }
 
 p, figcaption, li, td {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5em;
+    color: white;
 }
+
+p:first-child:first-letter {
+    color: wheat;
+    border: 2px solid black;
+    float: left;
+    font-family: Georgia;
+    font-size: 75px;
+    line-height: 60px;
+    /* adjust margin and padding here */
+    float: left;
+    margin-right: 18px;
+    
+  }
 
 .title {
     font-family: 'Monaco';
@@ -94,6 +128,21 @@ p, figcaption, li, td {
     padding-top: 1.0em;
     padding-bottom: 1.0em;
 }
+
+.playfair-display {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.playfair-large {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+  
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * 
     Images
@@ -173,4 +222,17 @@ li a:link, li a:visited {
 li a:active, li a:hover {
     color: gray;
     text-decoration: underline;
+}
+
+a[href^="http"]::after
+{
+  content: "";
+  width: 11px;
+  height: 11px;
+  margin-left: 4px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
 }
