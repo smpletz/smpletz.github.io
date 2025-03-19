@@ -1,13 +1,14 @@
+<!--Form setup from: https://formcarry.com/blog/how-to-create-a-simple-html-contact-form/ by Nusu Alabuga
+ -->
 <?php
 if (isset($_POST['email'])) {
 
-    // REPLACE THIS 2 LINES AS YOU DESIRE
-    $email_to = "you@awesomecompany.com";
-    $email_subject = "You've got a new submission";
+    $email_to = "pletzsean@gmail.com";
+    $email_subject = "Email from personal website";
 
     function problem($error)
     {
-        echo "Oh looks like there is some problem with your form data: <br><br>";
+        echo "There is a problem with your form data: <br><br>";
         echo $error . "<br><br>";
         echo "Please fix those to proceed.<br><br>";
         die();
@@ -19,7 +20,7 @@ if (isset($_POST['email'])) {
         !isset($_POST['email']) ||
         !isset($_POST['message'])
     ) {
-        problem('Oh looks like there is some problem with your form data.');
+        problem('There is a problem with your form data.');
     }
 
     $name = $_POST['fullName']; // required
@@ -66,9 +67,7 @@ if (isset($_POST['email'])) {
     @mail($email_to, $email_subject, $email_message, $headers);
 ?>
 
-    <!-- Replace this as your success message -->
-
-    Thanks for contacting us, we will get back to you as soon as possible.
+    Thanks for reaching out! I will get back to you as soon as possible.
 
 <?php
 }

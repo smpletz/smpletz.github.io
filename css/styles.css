@@ -40,14 +40,14 @@ body {
 }
 
 header {
-    width: 100vw; /* Always span the full width of the viewport */
+    width: 100vw;
     background-image: url('/images/sunset.jpg');
-    background-size: 100% auto; /* Width always fills, height scales naturally */
-    background-position: center center; /* Keeps focus in the center horizontally */
+    background-size: 100% auto;
+    background-position: center center;
     background-repeat: no-repeat;
 
     text-align: center;
-    font-size: 74px;
+    font-size: 50px;
     padding-top: 1.0em;
     padding-bottom: 1.0em;
 }
@@ -82,15 +82,19 @@ header a:link, header a:visited, header a:active, header a:hover {
     clear: both; 
 }
 
-
 .float-left {
-    float: left;
-    width: 48%;
+    float: none;
+    width: 100%;
 }
 
 .float-right {
-    float: right;
-    width: 48%;
+    float: none;
+    width: 100%;
+}
+
+#center {
+    margin-top: 2rem;
+    text-align: center;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * 
@@ -104,30 +108,33 @@ h1, h2, h3, h4, h5, h6 {
 
 p, figcaption, li, td {
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5em;
+    line-height: 1.3em;
+    font-size: 12px;
     color: white;
 }
 
-p:first-child:first-letter {
+h1 {
+    font-size: 1.5em;
+}
+
+.lead:first-letter {
     color: wheat;
-    border: 2px solid black;
     float: left;
     font-family: Georgia;
-    font-size: 75px;
+    font-size: 56px;
     line-height: 60px;
     /* adjust margin and padding here */
     float: left;
     margin-right: 18px;
     
-  }
+}
 
-.title {
-    font-family: 'Monaco';
-    text-align: center;
+label {
+    color: white;
+}
 
-    font-size: 74px;
-    padding-top: 1.0em;
-    padding-bottom: 1.0em;
+input {
+    color: white;
 }
 
 .playfair-display {
@@ -135,6 +142,7 @@ p:first-child:first-letter {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    color: wheat;
 }
 
 .playfair-large {
@@ -142,6 +150,7 @@ p:first-child:first-letter {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+    color: wheat;
 }
   
 
@@ -188,6 +197,7 @@ td {
     margin: 1em 0;
     display: grid;
     place-items: center;
+    font-size: 12px;
 }
 
 .download-link {
@@ -207,43 +217,38 @@ td {
     Menu
 * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-nav {
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 12px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1em;
+
     background-color: snow;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
-    box-shadow: 3px 0 3px rgba(0, 0, 0, 0.35);
     border-top: 2px solid black;
     border-bottom: 2px solid black;
+    padding: 1em 0;
 
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1;
 }
-ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-li {
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    width: 20%;
-    border-right: 1px solid darkgray;
-    display: grid;
-    place-items: center;
-}
 
-li a:link, li a:visited {
+.navBar a:link, .navBar a:visited {
     color: black;
     text-decoration: none;
 }
-li a:active, li a:hover {
+.navBar a:active, .navBar a:hover {
     color: gray;
     text-decoration: underline;
 }
 
-a[href^="http"]::after
+.navBar a[href^="http"]::after
 {
   content: "";
   width: 11px;
@@ -254,4 +259,49 @@ a[href^="http"]::after
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * 
+    Media Queries
+* * * * * * * * * * * * * * * * * * * * * * * * * * */
+@media screen and (min-width: 694px) { /* for when view is larger than mobile */
+    .navBar {
+        flex-direction: row;
+        font-size: 18px;
+        gap: 0;
+    }
+    
+    header {
+        font-size: 74px;        
+    }
+
+    .float-left {
+        float: left;
+        width: 48%;
+    }
+    .float-right {
+        float: right;
+        width: 48%;
+    }
+    
+    p, figcaption, li, td {
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+    
+    .lead:first-letter {
+        font-size: 75px;
+    }
+
+    figcaption {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .download {
+        font-size: 18px;
+    }
 }

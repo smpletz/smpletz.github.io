@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Contact</title>
 
     <!-- Normalize Stylizing -->
     <link rel="stylesheet" href="../css/normazlize.css">
@@ -16,6 +16,8 @@
 
     <link rel="stylesheet" href="../css/form.css" />
 </head>
+<!--Form setup from: https://formcarry.com/blog/how-to-create-a-simple-html-contact-form/ by Nusu Alabuga
+ -->
 <body>
     <div>
         <header class="playfair-large">
@@ -23,18 +25,19 @@
         </header>
     </div>
     
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="https://github.com/smpletz" target="_blank">GitHub</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="navBar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="https://github.com/smpletz" target="_blank">GitHub</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <h1 id="center" class="playfair-display">Send an Email!</h1>
+    <p id="center"><strong>Note:</strong>This page is a work in progress. If you need to contact me, reach me at <a href="https://mail.google.com/" target="_blank">pletzsean@gmail.com</a></p>
 
     <div class="form-container">
-        <form action="form.php" method="POST" class="form-form">
+        <form action="../form.php" method="POST" class="form-form">
             <label for="name">Your Name</label>
             <input type="text" id="name" name="fullName" required />
 
