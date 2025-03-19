@@ -5,6 +5,7 @@ html, body{
 
 html {
     box-sizing: border-box;
+    padding-bottom: 5.0rem;
 }
    
 *, *:before, *:after {
@@ -182,7 +183,25 @@ td {
     Page Specific
 * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
+/* Resume Page */
+.download{
+    margin: 1em 0;
+    display: grid;
+    place-items: center;
+}
 
+.download-link {
+    text-align: center;
+}
+
+.download-link a:link, .download-link a:visited {
+    color: blue;
+    text-decoration: none;
+}
+.download-link a:active, .download-link a:hover {
+    color: red;
+    text-decoration: underline;
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * 
     Menu
@@ -195,7 +214,6 @@ nav {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
 
-    /*  Set position here */
     position: sticky;
     top: 0;
     width: 100%;
@@ -210,9 +228,10 @@ ul {
 li {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
-    padding-left: 7.5%;
     width: 20%;
     border-right: 1px solid darkgray;
+    display: grid;
+    place-items: center;
 }
 
 li a:link, li a:visited {
