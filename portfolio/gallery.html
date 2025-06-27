@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    I360 Web Design Template
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- link to Font Awesome icon font -->
+    <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ovo&display=swap" rel="stylesheet">
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_upward_alt" />
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body><!-- Navigation Bar -->
+    <div class="nav">
+        <a href="index.html" class="bootstrap-fix"><i class="fa-brands fa-apple"></i> Sean Pletz</a>
+        <ul class="bar-end">
+            <li class="toggle"><i class="fa-solid fa-bars fa-lg"></i></li>
+            <li class="item"><a href="gallery.html">Gallery</a></li>
+            <li class="item"><a href="https://github.com/smpletz" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li class="item"><a href="resume.html">Resume</a></li>
+            <li class="item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <header class="inner-head">
+        <div class="inner-head-content">
+            <h1>Gallery</h1>
+            <h3>A collection of my recent projects</h3>
+        </div>
+
+    </header>
+
+    <main>
+        <h5>Apps</h5>
+        <div class="card-collection">
+            <figure class="card" data-bs-toggle="modal" data-bs-target="#calorie">
+                <img src="images/calorie_progress.png" alt="Tracker App Screenshot">
+                <div class="card-description">
+                    <figcaption>Made in Xcode</figcaption>
+                    <h3>Calorie Tracker</h3>
+                    <div class="p-wrapper">
+                        <p>An app that tracks calories based on user-inputted meals.</p>
+                    </div>
+                </div>
+            </figure>
+            <figure class="card" data-bs-toggle="modal" data-bs-target="#housing">
+                <img src="images/connect_roommate-list.png" alt="Figma Screenshot">
+                <div class="card-description">
+                    <figcaption>Made in Figma</figcaption>
+                    <div class="card-title">
+                        <h3>Hoosier Housing Connect</h3>
+                    </div>
+                    <div class="p-wrapper">
+                        <p>A tool for IU students to find housing and roommates.</p>
+                    </div>
+                </div>
+            </figure>
+            <figure class="card hide">
+                <img src="" alt="picture">
+                <div class="card-description">
+                    <figcaption>Made in </figcaption>
+                    <h3>Title</h3>
+                    <p>Description</p>
+                </div>
+            </figure>
+        </div>
+
+        <h5>Games</h5>
+        <div class="card-collection">
+            <figure class="card" data-bs-toggle="modal" data-bs-target="#casino">
+                <img src="images/pc-scene.png" alt="Construct Platformer Game">
+                <div class="card-description">
+                    <figcaption>Made in Construct 3</figcaption>
+                    <h3>Casino-Noir Platformer</h3>
+                    <div class="p-wrapper">
+                        <p>My first full project made in Construct 3. Simple platformer with a focus on original art and soundtrack.</p>
+                    </div>
+                </div>
+            </figure>
+            <figure class="card" data-bs-toggle="modal" data-bs-target="#topdown">
+                <img src="images/td-inside_train.png" alt="Construct Top-down Game">
+                <div class="card-description">
+                    <figcaption>Made in Construct 3</figcaption>
+                    <h3>Top-down Action Game</h3>
+                    <div class="p-wrapper">
+                        <p>My second full project made in Construct 3. Exploration of top-down mechanics with a focus on original art and soundtrack.</p>
+                    </div>
+                </div>
+            </figure>
+            <figure class="card" data-bs-toggle="modal" data-bs-target="#platform-u">
+                <img src="images/pu-scene.png" alt="Unity Platformer Game">
+                <div class="card-description">
+                    <figcaption>Made in Unity</figcaption>
+                    <h3>Simple Platformer</h3>
+                    <div class="p-wrapper">
+                        <p>An early project in my game design career. Focus on Unity techniques.</p>
+                    </div>
+                </div>
+            </figure>
+        </div>
+
+
+        <!-- Modals -->
+        <!-- Calorie Tracker -->
+        <div class="modal fade" id="calorie" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Calorie Tracker</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Project Summary</h2>
+                    <p>At the end of a semester of mastering the usage of different frameworks in Xcode, my partner and I were tasked with creating an app that shows off all that we'd learned. I was regularly going to the gym and using an app called MyFitnessPal, so I pitched the idea of recreating it. With this I had the goal of making an app to track calorie intake and expendature, all with the added benefit of being able to design my own custom functionalities with the app I make. The product was a fully functional &#40;but rough looking&#41; app that did just that.</p>
+                    <h2>Planning</h2>
+                    <p>My partner and I had just worked together on a small project, so we elected to work together again to make my proposed app for the final. After laying out my vision, we worked together to put our design plan in writing.</p>
+                    <figure>
+                        <img src="images/calorie-wireframe.png" alt="Wireframe">
+                        <figcaption>Initial wireframe</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/calorie-UML.png" alt="UML">
+                        <figcaption>Early class structure</figcaption>
+                    </figure>
+                    <h2>Development</h2>
+                    <p>Over the following 3 weeks we expanded on our design, adding new views and changing our class structure to make the app feel more powerful. It was around this point that we started to realize the benefits of using SwiftUI, since our use of Storyboard with UIKit was proving to be restrictive. We powered through, completing all of the views and connecting them to the rest of our app. We also had to change some app functinoalities to adapt to our additional frameworks of Codable, Webkit, and User Notifications.</p>
+                    <figure>
+                        <img src="images/calorie-storyboard.png" alt="Storyboard">
+                        <figcaption>Our storyboard design</figcaption>
+                    </figure>
+                    <h2>Final Product</h2>
+                    <p>Our completed project was met with praise from our peers, with some asking if we'd work towards an official release. It featured all the functionalities we settled on at the start, plus some that we decided on along the way. The project left a lot to be desired, but I intend to return to this project again to make it polished and possibly ready for a full release.</p>
+                    <figure>
+                        <img src="images/calorie_progress.png" alt="Home">
+                        <figcaption>The home page, which showed the current day's progress</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/calorie_new-meal.png" alt="New Meal">
+                        <figcaption>The new meal page, which allowed users to add new meal presets to the database</figcaption>
+                    </figure>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary no-grow" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Housing Connect -->
+        <div class="modal fade" id="housing" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Hoosier Housing Connect</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Project Summary</h2>
+                    <p>Over the course of my sixth semester I led a small group to design an app that will allow students to search for housing and roommates in one place. The process involved market research, interviews, and user testing &mdash; all with the goal of designing an app that IU students can trust.</p>
+                    <h2>Early Stages</h2>
+                    <p>As soon the project categories were announced I had an idea of an app that would benefit thousands of students like me. I found a group of my peeers that were interested in working together on it and we hit the ground running. <br><br>We started with research over the market, focusing mainly on interviewing IU students and asking about their experience searching for housing and roommates. We found out what was most important to them and started to sketch out some ideas for an app that would meet their needs. I chose to focus on the roommate search functionality of the app, since I had a very specific vision for it.</p>
+                    <figure>
+                        <img src="images/i300-sketch.png" alt="sketches">
+                        <figcaption>First sketches of an app interface</figcaption>
+                    </figure>
+                    <h2>Implementation</h2>
+                    <p>It took a few iterations of sketches with many small tweaks here and there, but eventually we settled on a design we were proud of. The project then moved to Figma, where I created the main UI elements to flow across the pages and fleshed out my roommate finding tool in a way that matched my vision. After a few rounds of user testing later, polish added to the design, and some restructuring of the app's flow, we finalized our design.</p>
+                    <figure>
+                        <img src="images/i300-figma.png" alt="Figma board">
+                        <figcaption>Final Figma Prototype</figcaption>
+                    </figure>
+                    <h2>Final Design</h2>
+                    <p>We compiled all of our work into a poster and presented it to our peers, even winning the award for best prototype from the instructor.</p>
+                    <button onclick=" window.open('https://www.figma.com/proto/5TO85Rn7DulHSV77dw7j3r/Wireframe-Prototype-3.0?node-id=2081-1540&t=GzIvs6eiNaNha7bR-0&scaling=min-zoom&content-scaling=fixed&page-id=2081%3A1538&starting-point-node-id=2081%3A1772', '_blank')">Test it out <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    <figure>
+                        <img src="images/i300-award.png" alt="Award">
+                        <figcaption>From left to right: Nathan Myers, Peri Small, Sean Pletz, and Alex Cookerly</figcaption>
+                    </figure>
+                    <h2>The Future</h2>
+                    <p>I'm proud of the app that my group and I designed, and I'd like to work towards making it a complete app for students to use. I aim to work with professors, student services, and local housing companies to bring these designs to reality.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary no-grow" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Casino Platformer -->
+        <div class="modal fade" id="casino" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Casino-Noir Platformer</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Project Summary</h2>
+                    <p>Throughout my class focusing on game art and sound, I steadily worked on a platformer to feature all of the work I had completed throughout the semester. Most of the time spent on this project was working in Piskel, Adobe Audition, and Bandlab, but Construct was the place where I experimented with programming techniques to implement my work in a smooth way.</p>
+                    <figure>
+                        <img src="images/pc-scene.png" alt="Casino Scene">
+                    </figure>
+                    <h2>Art</h2>
+                    <p>The first five weeks of this project were spent creating assets in Piskel. This was my first time working with a pixel art, so it took some time to get used to, but I started to work efficiently once I got the hang of it. Having no formal art experience, I struggled most with creating animations, but kept studying and experimenting until I made some I was happy with. The result was a playable platformer that felt <em>almost</em> immersive. The only thing missing was the sound.</p>
+                    <figure>
+                        <img src="images/pc-piskel.png" alt="Piskel Screenshot">
+                        <figcaption>Animating in Piskel</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/pc-cutscene.gif" alt="End Cutscene">
+                        <figcaption>Final Cutscene</figcaption>
+                    </figure>
+                    <h2>Sound</h2>
+                    <p>I worked towards fixing the issue of the silent world for the next five weeks of the project. I first worked by selecting &#40;or sometimes making&#41; and editing samples for sound effects, giving life to the character and certain environmental assets, but the game didn't feel elevated until the music was added. I worked with Bandlab to create music I felt fit the world in three different styles: ambient, horizontally adaptive, and vertically adaptive. Although I liked all of them, I settled on the horizontally adaptive version for my full release.</p>
+                    <figure>
+                        <img src="images/pc-bandlab.png" alt="Bandlab">
+                        <figcaption>Mixing in Bandlab</figcaption>
+                    </figure>
+                    <h2>Release</h2>
+                    <p>The final step in my project was to fully release the game on the indie development website itch.io. I made some final tweaks to my game and published it for anyone to come check out. Use the link below to give it a try.</p>
+                    <button onclick=" window.open('https://spletz.itch.io/casino-platformer'), 'target: _blank' ">Try it out <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary no-grow" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Top-down Action -->
+        <div class="modal fade" id="topdown" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Top-down Action Game</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Project Summary</h2>
+                    <p>Over three weeks I created a top-down action game in Construct 3. The focus of the project was to experiment with a different perspective to animate in, which provided unique challenges. I completed the project in segements, focusing on core elements one week, non-essential elements the second week, and polish the final week. The final product was a complete top-down game with a story and multiple environments.</p>
+                    <h2>Art</h2>
+                    <p>I foucsed the game on a show I had recently watched, which allowed me to have plenty of source material to adapt to my needs. I worked around characters first, then scenery, then extra elements to make the scenery feel more alive. The process was lengthy due to the perspective requirements and additional environment, but it was well worth it in the end.</p>
+                    <figure>
+                        <img src="images/td-kick.gif" alt="Kick animation">
+                        <figcaption>Player's attack animation</figcaption>
+                    </figure>
+                    <h2>Sound</h2>
+                    <p>The project had a much larger focus on art, but the sound elements were also inspired by the source material's soundtrack. I worked with similar instruments, but chose to adapt the music to fit my theme further. I also chose to make the music scale vertically as the player completed more of the game, also leaving in a bridge between environments. The result was a large group of files to carefully organize, but the effect was noticable.</p>
+                    <figure>
+                        <img src="images/td-eventsheet.png" alt="Event sheet">
+                        <figcaption>Audio elements organized in event sheet</figcaption>
+                    </figure>
+                    <h2>Release</h2>
+                    <p>The game will be released on itch.io soon, so check back later to try it out!</p>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary no-grow" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Unity Platformer -->
+        <div class="modal fade" id="platform-u" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Simple Platformer</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Project Summary</h2>
+                    <p>This was the first standalone project I created in Unity, developed to experiment with asset implementation and other Unity mechanics.</p>
+                    <h2>Development</h2>
+                    <p>Up to this point I had only worked with single scene development with asset packs provided to me, but this project allowed me to experiment with exploring my own asset downloads and tweaking them to my needs. The highlights of this project were mostly in my comfort using Unity, so feel free to explore my GitHub code to see how it was made!</p>
+                    <button onclick=" window.open('https://github.com/smpletz/C292-GameTest/tree/main/Chthonic'), 'target= _blank'">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary no-grow" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-links"> <!-- Page links -->
+            <h4 class="spacer">Pages</h4>
+            <div class="foot-box">
+                <ul>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a target="_blank" href="https://github.com/smpletz">GitHub</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footer-links"> <!-- Contacts -->
+            <h4 class="spacer">Contact</h4>
+            <div class="foot-box">
+                <ul>
+                    <li>Email: <a href=mailto:“pletzsean@gmail.com”>pletzsean@gmail.com</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/sean-pletz/" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/sean-pletz</a></li>
+                </ul>
+            </div>
+            
+
+        </div>
+
+    </footer>
+    
+    <button class="toTop" onclick="location.href='#'">Back to top <i class="fa-solid fa-arrow-up"></i></button>
+    
+    <!-- Script for Navigation - hides and reveals menu items on click -->
+    <script>
+        function toggleDropdown() {
+            document.querySelectorAll('.item').forEach(item => item.classList.toggle('show'));
+        }
+        document.querySelector('.toggle').addEventListener('click', toggleDropdown);
+    </script>
+
+    <!-- JavaScript from Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+    <!-- Personal JavaScript additions -->
+    <script>
+        window.addEventListener('load', () => {
+        const scrollY = sessionStorage.getItem('scrollY');
+        if (scrollY !== null) {
+            sessionStorage.removeItem('scrollY');
+        }
+        });
+    </script>
+
+</body>
+</html>
