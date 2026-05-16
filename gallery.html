@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-    I360 Web Design Template
--->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +7,12 @@
     <title>Gallery</title>
     <!-- resets browser defaults -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- site icon -->
+    <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
     <!-- link to Font Awesome icon font -->
     <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CDN -->
@@ -97,24 +100,26 @@
             </figure>
         </div>
 
-        <h5>Data Analysis</h5>
+        <h5>Websites and Apps</h5>
         <div class="card-collection">
-            <figure class="card" data-bs-toggle="modal" data-bs-target="#owdata">
-                <img src="images/OW-PC1.png" alt="PCA Chart">
+            <figure class="card" data-bs-toggle="modal" data-bs-target="#art">
+                <img style="object-fit: contain;" src="images/Art-logo.png" alt="Art Market Logo">
                 <div class="card-description">
-                    <figcaption>Made in Python</figcaption>
-                    <h3>Overwatch META Analysis</h3>
+                    <figcaption>Built with php, mySQL, javascript, and various APIs</figcaption>
+                    <h3>The Art Market</h3>
                     <div class="p-wrapper">
-                        <p>An analysis of metrics that contribute to winning at different skill levels in Overwatch 2.</p>
+                        <p>A digital marketplace for IU students to exchange materials for fine arts courses.</p>
                     </div>
                 </div>
             </figure>
-            <figure class="card hide">
-                <img src="" alt="picture">
+            <figure class="card" data-bs-toggle="modal" data-bs-target="#calorie">
+                <img src="images/calorie_progress.png" alt="Tracker App Screenshot">
                 <div class="card-description">
-                    <figcaption>Made in </figcaption>
-                    <h3>Title</h3>
-                    <p>Description</p>
+                    <figcaption>Made in Xcode</figcaption>
+                    <h3>Calorie Tracker</h3>
+                    <div class="p-wrapper">
+                        <p>An app that tracks calories based on user-inputted meals.</p>
+                    </div>
                 </div>
             </figure>
             <figure class="card hide">
@@ -127,15 +132,15 @@
             </figure>
         </div>
 
-        <h5>Apps</h5>
+        <h5>Data Analysis</h5>
         <div class="card-collection">
-            <figure class="card" data-bs-toggle="modal" data-bs-target="#calorie">
-                <img src="images/calorie_progress.png" alt="Tracker App Screenshot">
+            <figure class="card" data-bs-toggle="modal" data-bs-target="#owdata">
+                <img src="images/OW-PC1.png" alt="PCA Chart">
                 <div class="card-description">
-                    <figcaption>Made in Xcode</figcaption>
-                    <h3>Calorie Tracker</h3>
+                    <figcaption>Made in Python</figcaption>
+                    <h3>Overwatch META Analysis</h3>
                     <div class="p-wrapper">
-                        <p>An app that tracks calories based on user-inputted meals.</p>
+                        <p>An analysis of metrics that contribute to winning at different skill levels in Overwatch 2.</p>
                     </div>
                 </div>
             </figure>
@@ -232,6 +237,38 @@
                     </figure>
 
 
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary no-grow" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Art Market -->
+        <div class="modal fade" id="art" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">The Art Market</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Project Summary</h2>
+                    <p>Over the course of 8 months, my team and I built a digital marketplace for IU students to exchange materials for their fine arts courses and personal projects. With plenty of peers in the fine arts community, we wanted to create a sustainable solution to the problem of material waste using our technical talents, leading us to create a website that does just that.</p>
+                    <h2>Getting Started</h2>
+                    <p>Our process began during the Fall of 2025 with ideation and gauging of what features our target users would make genuine use of. Conversations with our connections in the space and survey results gave us a lot to work with, allowing us to make initial designs and properly scope what we&rsquo;d build in the Spring. We detailed our plan in one complete <a href="Art-proposal.pdf" target="_blank" rel="noopener noreferrer">document</a>.</p>
+                    <h2>Development</h2>
+                    <p>The spring semester of 2026 was dedicated to fully realizing the service we had envisioned and planned out the previous semester. After taking the first two weeks to build the database and make adjustments to our timeline, we jumped right into a 6-week build phase. Each team member took on the responsibility of completing two features over the first four weeks and taking the last two to iterate and improve. I was personally responsible for implementing the search and browse functionality. The process involved determining what features are most important for a user to narrow down their search and combining results of numberous queries to get an accurate result.</p>
+                    <p>Following the completion of our build phase, we entered a 4-week stretch of user testing and revising. Heading into these sprints, I took on the role of reaching out to members of the fine arts community through on-campus events and setting up interviews with team members. Working participants through scenarios, observing, and asking questions showed us the areas of our service that needed the most work, primarily from issues with user flow. We revised our service, sought out a second round of feedback, and prepped our service for presentation.</p>
+                    <figure>
+                        <iframe width="100%" height="400px" src="https://www.youtube.com/embed/-iVGJKwpPn4" title="The Art Market" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <figcaption>Video walkthrough of our service</figcaption>
+                    </figure>
+                    <h2>Conclusion</h2>
+                    <p>The journey of the Art Market saw its conclusion at the 2026 Informatics Capstone fair, where we were repeatedly asked the question "when will I be able to use this?" from both students professors. The future of our service is cloudy, since the university holds the rights to the service and rarely fully release capstone projects, but if the demand proves too much to ignore, we would love to see our service continue to help the community once we're gone.</p>
+                    <button onclick=" window.open('https://zion.luddy.indiana.edu/info-capstone-2026/the-art-market#', '_blank')">Zion Booth <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    <h2>Project Takeaways</h2>
+                    <p>This was almost inarguably my most insightful project in terms of project management and team cohesion. Building our team out of both talent and passion set us up for success from the start, but consistent communication and a dedication to not settle for incomplete or ineffective features is what proved to be the most valuable. Hard conversations over what features need major changes, which need to be scrapped, and what unaccounted for problems need solving were what pushed our group to make our service what it is. Everything I took out of this project will be used towards both personal projects and new ones with some of my team members.</p>
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-primary no-grow" data-bs-dismiss="modal">Close</button>
