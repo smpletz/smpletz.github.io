@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- site icon -->
+    <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+    <!-- link to Font Awesome icon font -->
+    <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ovo&display=swap" rel="stylesheet">
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_upward_alt" />
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body><!-- Navigation Bar -->
+    <div class="nav">
+        <a href="index.html" class="bootstrap-fix">Sean Pletz</a>
+        <ul class="bar-end">
+            <li class="toggle"><i class="fa-solid fa-bars fa-lg"></i></li>
+            <li class="item"><a href="gallery.html">Gallery</a></li>
+            <li class="item"><a href="https://github.com/smpletz" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li class="item"><a href="resume.html">Resume</a></li>
+            <li class="item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <header class="inner-head">
+        <div class="inner-head-content">
+            <h1>Portfolio</h1>
+            <h3>A collection of my recent projects</h3>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="pr-card-collection">
+            <figure class="pr-card" data-bs-toggle="modal" data-bs-target="#art">
+                <img style="object-fit: contain;" src="images/Art-logo.png" alt="Art Market Logo">
+                <div class="card-description">
+                    <figcaption>Built with php, mySQL, javascript, and various APIs</figcaption>
+                    <h3>The Art Market</h3>
+                    <div class="p-wrapper">
+                        <p>A digital marketplace for IU students to exchange materials for fine arts courses.</p>
+                    </div>
+                </div>
+            </figure>
+            <figure class="pr-card" data-bs-toggle="modal" data-bs-target="#salesforce">
+                <img src="images/SF-Figma.png" alt="Figma Screenshot">
+                <div class="card-description">
+                    <figcaption>Made in Figma</figcaption>
+                    <div class="card-title">
+                        <h3>Salesforce Starter</h3>
+                    </div>
+                    <div class="p-wrapper">
+                        <p>Conversion-focused design updates to the marketing tool of the Salesforce Starter suite.</p>
+                    </div>
+                </div>
+            </figure>
+            <figure class="pr-card" data-bs-toggle="modal" data-bs-target="#adobe">
+                <img src="images/Adobe-Figma.png" alt="Figma Screenshot">
+                <div class="card-description">
+                    <figcaption>Made in Figma</figcaption>
+                    <div class="card-title">
+                        <h3>Adobe Firefly</h3>
+                    </div>
+                    <div class="p-wrapper">
+                        <p>Redesigned interface of Adobe&rsquo;s Firefly tool.</p>
+                    </div>
+                </div>
+            </figure>
+            <figure class="pr-card" data-bs-toggle="modal" data-bs-target="#espn">
+                <img src="images/ESPN-Figma.png" alt="Figma Screenshot">
+                <div class="card-description">
+                    <figcaption>Made in Figma</figcaption>
+                    <div class="card-title">
+                        <h3>ESPN Fantasy</h3>
+                    </div>
+                    <div class="p-wrapper">
+                        <p>New social feature to integrate ESPN Fantasy users into the larger sports community.</p>
+                    </div>
+                </div>
+            </figure>
+            <figure class="pr-card" data-bs-toggle="modal" data-bs-target="#housing">
+                <img src="images/connect_roommate-list.png" alt="Figma Screenshot">
+                <div class="card-description">
+                    <figcaption>Made in Figma</figcaption>
+                    <div class="card-title">
+                        <h3>Hoosier Housing Connect</h3>
+                    </div>
+                    <div class="p-wrapper">
+                        <p>A tool for IU students to find housing and roommates.</p>
+                    </div>
+                </div>
+            </figure>
+        </div>
+
+
+        <!-- Modals -->
+        <!-- Calorie Tracker -->
+        <div class="modal fade" id="calorie" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Calorie Tracker</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Project Summary</h2>
+                    <p>At the end of a semester of mastering the usage of different frameworks in Xcode, my partner and I were tasked with creating an app that shows off all that we'd learned. I was regularly going to the gym and using an app called MyFitnessPal, so I pitched the idea of recreating it. With this I had the goal of making an app to track calorie intake and expendature, all with the added benefit of being able to design my own custom functionalities with the app I make. The product was a fully functional &#40;but rough looking&#41; app that did just that.</p>
+                    <h2>Planning</h2>
+                    <p>My partner and I had just worked together on a small project, so we elected to work together again to make my proposed app for the final. After laying out my vision, we worked together to put our design plan in writing.</p>
+                    <figure>
+                        <img src="images/calorie-wireframe.png" alt="Wireframe">
+                        <figcaption>Initial wireframe</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/calorie-UML.png" alt="UML">
+                        <figcaption>Early class structure</figcaption>
+                    </figure>
+                    <h2>Development</h2>
+                    <p>Over the following 3 weeks we expanded on our design, adding new views and changing our class structure to make the app feel more powerful. It was around this point that we started to realize the benefits of using SwiftUI, since our use of Storyboard with UIKit was proving to be restrictive. We powered through, completing all of the views and connecting them to the rest of our app. We also had to change some app functinoalities to adapt to our additional frameworks of Codable, Webkit, and User Notifications.</p>
+                    <figure>
+                        <img src="images/calorie-storyboard.png" alt="Storyboard">
+                        <figcaption>Our storyboard design</figcaption>
+                    </figure>
+                    <h2>Final Product</h2>
+                    <p>Our completed project was met with praise from our peers, with some asking if we'd work towards an official release. It featured all the functionalities we settled on at the start, plus some that we decided on along the way. The project left a lot to be desired, but I intend to return to this project again to make it polished and possibly ready for a full release.</p>
+                    <figure>
+                        <img src="images/calorie_progress.png" alt="Home">
+                        <figcaption>The home page, which showed the current day's progress</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/calorie_new-meal.png" alt="New Meal">
+                        <figcaption>The new meal page, which allowed users to add new meal presets to the database</figcaption>
+                    </figure>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary no-grow" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Art Market -->
+        <div class="modal fade" id="art" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">The Art Market</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Project Summary</h2>
+                    <p>Over the course of 8 months, my team and I built a digital marketplace for IU students to exchange materials for their fine arts courses and personal projects. With plenty of peers in the fine arts community, we wanted to create a sustainable solution to the problem of material waste using our technical talents, leading us to create a website that does just that.</p>
+                    <h2>Getting Started</h2>
+                    <p>Our process began during the Fall of 2025 with ideation and gauging of what features our target users would make genuine use of. Conversations with our connections in the space and survey results gave us a lot to work with, allowing us to make initial designs and properly scope what we&rsquo;d build in the Spring. We detailed our plan in one complete <a href="Art-proposal.pdf" target="_blank" rel="noopener noreferrer">document</a>.</p>
+                    <h2>Development</h2>
+                    <p>The spring semester of 2026 was dedicated to fully realizing the service we had envisioned and planned out the previous semester. After taking the first two weeks to build the database and make adjustments to our timeline, we jumped right into a 6-week build phase. Each team member took on the responsibility of completing two features over the first four weeks and taking the last two to iterate and improve. I was personally responsible for implementing the search and browse functionality. The process involved determining what features are most important for a user to narrow down their search and combining results of numberous queries to get an accurate result.</p>
+                    <p>Following the completion of our build phase, we entered a 4-week stretch of user testing and revising. Heading into these sprints, I took on the role of reaching out to members of the fine arts community through on-campus events and setting up interviews with team members. Working participants through scenarios, observing, and asking questions showed us the areas of our service that needed the most work, primarily from issues with user flow. We revised our service, sought out a second round of feedback, and prepped our service for presentation.</p>
+                    <figure>
+                        <iframe width="100%" height="400px" src="https://www.youtube.com/embed/-iVGJKwpPn4" title="The Art Market" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <figcaption>Video walkthrough of our service</figcaption>
+                    </figure>
+                    <h2>Conclusion</h2>
+                    <p>The journey of the Art Market saw its conclusion at the 2026 Informatics Capstone fair, where we were repeatedly asked the question "when will I be able to use this?" from both students professors. The future of our service is cloudy, since the university holds the rights to the service and rarely fully release capstone projects, but if the demand proves too much to ignore, we would love to see our service continue to help the community once we're gone.</p>
+                    <button onclick=" window.open('https://zion.luddy.indiana.edu/info-capstone-2026/the-art-market#', '_blank')">Zion Booth <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    <h2>Project Takeaways</h2>
+                    <p>This was almost inarguably my most insightful project in terms of project management and team cohesion. Building our team out of both talent and passion set us up for success from the start, but consistent communication and a dedication to not settle for incomplete or ineffective features is what proved to be the most valuable. Hard conversations over what features need major changes, which need to be scrapped, and what unaccounted for problems need solving were what pushed our group to make our service what it is. Everything I took out of this project will be used towards both personal projects and new ones with some of my team members.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary no-grow" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Salesforce Starter -->
+        <div class="modal fade" id="salesforce" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Salesforce Starter Marketing</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Project Summary</h2>
+                    <p>This is the first project I had the priveledge of working on for Interactive Design Practice, a class where I was able to work with major companies to rework or design entirely new features for their existing websites and applications. This project served as my introduction to the complete design process, and it wasn&rsquo;t one where I'd be guided along the whole way. My team was given a <a href="SF-Brief.pdf" target="_blank" rel="noopener noreferrer">brief</a>, 5 weeks, and an deliverable expectation. The brief detailed Salesforce&rsquo;s need for a new approach to the marketing tools of their Starter suite to convert users from trial testers to paying customers, and from there it was up to us for the rest.</p>
+                    <h2>Early Stages</h2>
+                    <p>My team got off to a slow start, unsure of what the right course of action is for a project like this. We were intentionally not given much direction in the class, favoring learning your own way through failure over uniform instruction. We determined the best approach was to conduct interviews on the target audience, gauge their struggles, and compare with competitors to figure out where the problems are.</p>
+                    <figure>
+                        <img src="images/SF-Brief.png" alt="Brief" style="border:1px solid grey;">
+                        <figcaption>The problem given to us in the brief directly from Salesforce</figcaption>
+                    </figure>
+                    <h2>Ideation</h2>
+                    <p>After completing our inital research, we narrowed down our findings to the key problem areas and started to sketch out some possible solutions. We considered numerous possible directions to go in and eventually settled on a design that blended the core elements from a few of them together.</p>
+                    <figure>
+                        <img src="images/SF-Sketches.jpeg" alt="Sketches">
+                        <figcaption>Sketches of possible design directions</figcaption>
+                    </figure>
+                    <h2>Final Design</h2>
+                    <p>We built out our sketches in Figma, breaking apart each section by its location within the suite. From the high-fidelity prototype, we finalized our deliverable presentation and sent it to the Salesforce team for feedback.</p>
+                    <button onclick=" window.open('https://www.figma.com/design/4zFtC29vosajNrAAxl8YWp/IDP-2025-Project-1?node-id=0-1&t=kjyWktxbGkJadNyE-1', '_blank')">Prototype <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    <button onclick=" window.open('SF-Pres.pdf', '_blank')">Presentation <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    <h2>Project Takeaways</h2>
+                    <p>This project was a learning experience more than it was a demonstration of inate talent, but from this I was able to grow as a designer in many ways. Firstly, my group was able to better understand time management of a larger project, especially when it comes to conducting interviews. We were able to understand the importance of abandoning ideas where necessary and improving upon others in pursuit of a single, cohesive design. We were also able to understand the significance of presentation structure and technique. Many of these were areas we fell short on in the project, but all of which we were able to improve upon throughout the following projects.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary no-grow" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Adobe Firefly -->
+        <div class="modal fade" id="adobe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Adobe Firefly</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Project Summary</h2>
+                    <p>This was the second project of the Interactive Design Practice course I took in my seventh semseter and one where I was able to take a leadership role within my team. Taking what I'd learned from the first project (Salesforce Starter Marketing), I went into this project with great expectations of how I could apply what I'd learned so far. The project&rsquo;s <a href="Adobe-Brief.pdf" target="_blank" rel="noopener noreferrer">brief</a> laid out much different requirements, looking for a redesign of the existing layouts of Adobe&rsquo;s different AI media-generating tools within Firefly to follow a consistent prompting pattern. This difference in what kind of problem we&rsquo;re aiming to solve proved to require a very different approach to problem solving, but it also presented opportunities to discover what parts of the design process are universal across all types of projects.</p>
+                    <h2>Early Stages</h2>
+                    <p>Before starting on any work related to solving the problem, I laid out a plan for deadlines and goals for each of the 5 weeks of the project, leaving some room for adjustment as necessary, but forcing the team to be deliberate about we aimed to achieve with each step. From there, we started on research on real users, industry competitors, and Adobe&rsquo;s designs across other products. We sought out to find the best form of consistency both within Firefly and across the gen-AI industry and other Adobe products.</p>
+                    <figure>
+                        <img src="images/Adobe-Plan.png" alt="Plan" style="border:1px solid grey;">
+                        <figcaption>Project timeline</figcaption>
+                    </figure>
+                    <h2>Ideation</h2>
+                    <p>We came away from our research with a comprehensive understanding of the user&rsquo;s struggles and how the same problems are solved in other services, allowing us to find the right mix. We sketched a variety of solutions to these problems, scrapping a handful, but finding a way to integrate most of them into the design at large. Our goal was to solve each problem users had in as few changes as possible, but the multi-tool design requirements proved to challenge this simplicity. We decided to incorporate multiple design aspects into our final solution, but aimed to focus them into a single solution.</p>
+                    <figure>
+                        <img src="images/Adobe-Sketches.png" alt="Sketches">
+                        <figcaption>Sketches of possible design directions</figcaption>
+                    </figure>
+                    <h2>Final Design</h2>
+                    <p>We built out our sketches in Figma, breaking apart the designs by their suite-specific implementations. The prototype was then elaborated on in a single deliverable presentation and sent to Adobe for feedback.</p>
+                    <button onclick=" window.open('https://www.figma.com/proto/YrR0TFDDYTHmMDtHwHWt5e/IDP---Project-2-Prototype-Wireframing?node-id=0-1&t=XXmvLqTCXBhVgBPP-1', '_blank')">Prototype <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    <button onclick=" window.open('Adobe-Pres.pdf', '_blank')">Presentation <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    <h2>Project Takeaways</h2>
+                    <p>I took away as much from this project as I did from the one prior to it. While understanding the different elements of design based on project type allowed me to gain a deeper understanding of how to apply and adapt the design process, my biggest takeaways from the project were related to my role as a leader within my group. I was able to learn the challenges that come with facilitating a team of people with varying backgrounds and different schedules, as well as how to overcome conflicts within a group. These insights allowed me to become both a better leader and a better follower across all group projects, much of which is reflected in the following project with ESPN.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary no-grow" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- ESPN Fantasy -->
+        <div class="modal fade" id="espn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">ESPN Fantasy</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Project Summary</h2>
+                    <p>This was the third and final project of the Interactive Design Practice course I took in my seventh semseter at Indiana University. I went into this project with high expectations, fully prepared to use all that I&rsquo;d learned from my previous two experiences. I was fortunate to be paired with equally passionate teammates who were completely prepared to put their all into making a design to be proud of. We were given our most open-ended <a href="ESPN-Brief.pdf" target="_blank" rel="noopener noreferrer">brief</a> yet, which left us with starting with the most difficult challenge of the project: narrowing down.</p>
+                    <h2>Early Stages</h2>
+                    <p>I was given the opportunity to interview ESPN Fantasy's design team on behalf of the class, which allowed us to gain some deeper insights into what they were looking to gain from our designs. Our initial research was based off of community feedback, from online forums, in-person interviews, and surveys of current users. From these, we were able to narrow down to a relevant problem users wanted solved. From there, our group explored multiple possible directions, each of which was backed by our research in different ways.</p>
+                    <figure>
+                        <img src="images/ESPN-Interview.png" alt="Interview" style="border:1px solid grey;">
+                        <figcaption>Excerpt from the interview transcript</figcaption>
+                    </figure>
+                    <h2>Ideation</h2>
+                    <p>To decide on a single design direction, we held a few sketching sessions to better understand each other's ideas and further flesh-out what we agreed was effective. This collective and iterative design process allowed us to create a design that built on the strengths of each other&rsquo;s ideas, many of which resurfaced from previous designs but in purposeful reapplications.</p>
+                    <figure>
+                        <img src="images/ESPN-Sketches.png" alt="Sketches">
+                        <figcaption>Our design board</figcaption>
+                    </figure>
+                    <h2>Final Design</h2>
+                    <p>I was able to take responsibility as lead engineer for the group, completing a majority of the prototyping work in Figma while regularly consulting my team for input throughout. The prototype was then elaborated on in a single deliverable presentation and sent to ESPN for feedback.</p>
+                    <button onclick=" window.open('https://www.figma.com/proto/1KuUCDxX4GyyMSbwPvdCSK/ESPN-Fantasy-Design?node-id=10-2&t=BbkhOoLVd7F22fed-1', '_blank')">Prototype <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    <button onclick=" window.open('https://www.figma.com/deck/GDjimCCpP5y4Y3ogkfdKmL/P3T1_ESPNFantasy?node-id=2045-1364&t=iFVkVISFrwOqnqR1-1', '_blank')">Presentation <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    <h2>Project Takeaways</h2>
+                    <p>This project was my largest inspiration for pursuing HCI/d further, since working with a group of truly passionate individuals showed me just how effective I could be in pushing a group towards results we could be proud of. Communication, commitment, and collaboration were the highlights of what made us an effective team, and I&rsquo;ve made every effort to continue to emphasize these practices in group settings beyond this project.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary no-grow" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Housing Connect -->
+        <div class="modal fade" id="housing" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Hoosier Housing Connect</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Project Summary</h2>
+                    <p>Over the course of my sixth semester I led a small group to design an app that will allow students to search for housing and roommates in one place. The process involved market research, interviews, and user testing &mdash; all with the goal of designing an app that IU students can trust.</p>
+                    <h2>Early Stages</h2>
+                    <p>As soon the project categories were announced I had an idea of an app that would benefit thousands of students like me. I found a group of my peeers that were interested in working together on it and we hit the ground running. <br><br>We started with research over the market, focusing mainly on interviewing IU students and asking about their experience searching for housing and roommates. We found out what was most important to them and started to sketch out some ideas for an app that would meet their needs. I chose to focus on the roommate search functionality of the app, since I had a very specific vision for it.</p>
+                    <figure>
+                        <img src="images/i300-sketch.png" alt="sketches">
+                        <figcaption>First sketches of an app interface</figcaption>
+                    </figure>
+                    <h2>Implementation</h2>
+                    <p>It took a few iterations of sketches with many small tweaks here and there, but eventually we settled on a design we were proud of. The project then moved to Figma, where I created the main UI elements to flow across the pages and fleshed out my roommate finding tool in a way that matched my vision. After a few rounds of user testing later, polish added to the design, and some restructuring of the app's flow, we finalized our design.</p>
+                    <figure>
+                        <img src="images/i300-figma.png" alt="Figma board">
+                        <figcaption>Final Figma Prototype</figcaption>
+                    </figure>
+                    <h2>Final Design</h2>
+                    <p>We compiled all of our work into a poster and presented it to our peers, even winning the award for best prototype from the instructor.</p>
+                    <button onclick=" window.open('https://www.figma.com/proto/5TO85Rn7DulHSV77dw7j3r/Wireframe-Prototype-3.0?node-id=2081-1540&t=GzIvs6eiNaNha7bR-0&scaling=min-zoom&content-scaling=fixed&page-id=2081%3A1538&starting-point-node-id=2081%3A1772', '_blank')">Test it out <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    <figure>
+                        <img src="images/i300-award.png" alt="Award">
+                        <figcaption>From left to right: Nathan Myers, Peri Small, Sean Pletz, and Alex Cookerly</figcaption>
+                    </figure>
+                    <h2>The Future</h2>
+                    <p>I'm proud of the app that my group and I designed, and I'd like to work towards making it a complete app for students to use. I aim to work with professors, student services, and local housing companies to bring these designs to reality.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary no-grow" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Overwatch META Analysis -->
+        <div class="modal fade" id="owdata" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Overwatch 2 META Analysis</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Project Summary</h2>
+                    <p>As the final project of my data mining course, I was tasked to use mining techniques to make discoveries on a topic of my choosing. Working with another member of IU&rsquo;s game development community, I aimed to make discoveries on what leads to differences in META (most effective tactic available) and related winningness of characters across different in-game skill tiers.</p>
+                    <h2>Context and Objectives</h2>
+                    <p>Overwath 2 is the sequel to the massively popular 6v6 class-based shooter Overwatch, which had over 30 million active monthly players at its peak. The game revolutionized the competitive gaming space through its multi-billion dollar "Overwatch League," but much of the game&rsquo;s success can be creditited to its simultaneous appeal to a casual market. In both cases, personal improvement is the core of what makes the game replayable. We sought out to make three key discoveries to help players make improvements: What heroes (playable characters within the game) are currently being played by the game&rsquo;s top players, what heroes tend to win more, and what factors differ the most for specific heroes between high and low ranked players.</p>
+                    <h2>Data</h2>
+                    <p>We collected data from two sources: the offical current-season hero-specific data from Blizzard (the game&rsquo;s publisher) and a similar publically available dataset from Kaggle over the first four competitive seasons (~3 month periods of ranked play). These two sources served, while similar, served different purposes for the methods most relevant to our goals.</p>
+                    <h2>Methods</h2>
+                    <p>We used K-means cluster analysis for the determination of what heroes were in the META of the current season. This approach allowed us to most clearly distinguish clusters of what characters were popular and successful (META), which were popular, but found no greater rate of success (fan-favorites), and which were neither successful nor popular, and therefore likely in need of a change by the developers. To determine what factors differ the most between ranks for the same heroes, we used pricipal component analysis on the Kaggle dataset. This approach allowed us to make hero-specific inferences based on data for each across ranks.</p>
+                    <h2>Results</h2>
+                    <p>We computed all of the data and created all visualizations in python and compiled them into a formal report and a short presentation to highlight our key findings. All computations and additional visualizations can be found in the <a href="https://github.iu.edu/B365-Fall2025/Project-olibelch-spletz" target="_blank" rel="noopener noreferrer">GitHub repository</a>.</p>
+                    <button onclick=" window.open('OW-Presentation.pdf', '_blank')">Presentation <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    <button onclick=" window.open('OW-Report.pdf', '_blank')">Report <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    <figure>
+                        <img src="images/OW-CA.png" alt="Cluster Analysis" style="border:1px solid grey;">
+                        <figcaption>Cluster analysis of pick rate vs win rate in grandmaster and champion rank tiers during season 19.</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="images/OW-PC1.png" alt="PCA" style="border:1px solid grey;">
+                        <figcaption>PC1 for Tracer, showing dominant loading of objective time.</figcaption>
+                    </figure>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary no-grow" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Casino Platformer -->
+        <div class="modal fade" id="casino" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Casino-Noir Platformer</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Project Summary</h2>
+                    <p>Throughout my class focusing on game art and sound, I steadily worked on a platformer to feature all of the work I had completed throughout the semester. Most of the time spent on this project was working in Piskel, Adobe Audition, and Bandlab, but Construct was the place where I experimented with programming techniques to implement my work in a smooth way.</p>
+                    <figure>
+                        <img src="images/pc-scene.png" alt="Casino Scene">
+                    </figure>
+                    <h2>Art</h2>
+                    <p>The first five weeks of this project were spent creating assets in Piskel. This was my first time working with a pixel art, so it took some time to get used to, but I started to work efficiently once I got the hang of it. Having no formal art experience, I struggled most with creating animations, but kept studying and experimenting until I made some I was happy with. The result was a playable platformer that felt <em>almost</em> immersive. The only thing missing was the sound.</p>
+                    <figure>
+                        <img src="images/pc-piskel.png" alt="Piskel Screenshot">
+                        <figcaption>Animating in Piskel</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/pc-cutscene.gif" alt="End Cutscene">
+                        <figcaption>Final Cutscene</figcaption>
+                    </figure>
+                    <h2>Sound</h2>
+                    <p>I worked towards fixing the issue of the silent world for the next five weeks of the project. I first worked by selecting &#40;or sometimes making&#41; and editing samples for sound effects, giving life to the character and certain environmental assets, but the game didn't feel elevated until the music was added. I worked with Bandlab to create music I felt fit the world in three different styles: ambient, horizontally adaptive, and vertically adaptive. Although I liked all of them, I settled on the horizontally adaptive version for my full release.</p>
+                    <figure>
+                        <img src="images/pc-bandlab.png" alt="Bandlab">
+                        <figcaption>Mixing in Bandlab</figcaption>
+                    </figure>
+                    <h2>Release</h2>
+                    <p>The final step in my project was to fully release the game on the indie development website itch.io. I made some final tweaks to my game and published it for anyone to come check out. Use the link below to give it a try.</p>
+                    <button onclick=" window.open('https://spletz.itch.io/casino-platformer'), 'target: _blank' ">Try it out <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary no-grow" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Top-down Action -->
+        <div class="modal fade" id="topdown" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Top-down Action Game</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Project Summary</h2>
+                    <p>Over three weeks I created a top-down action game in Construct 3. The focus of the project was to experiment with a different perspective to animate in, which provided unique challenges. I completed the project in segements, focusing on core elements one week, non-essential elements the second week, and polish the final week. The final product was a complete top-down game with a story and multiple environments.</p>
+                    <h2>Art</h2>
+                    <p>I foucsed the game on a show I had recently watched, which allowed me to have plenty of source material to adapt to my needs. I worked around characters first, then scenery, then extra elements to make the scenery feel more alive. The process was lengthy due to the perspective requirements and additional environment, but it was well worth it in the end.</p>
+                    <figure>
+                        <img src="images/td-kick.gif" alt="Kick animation">
+                        <figcaption>Player's attack animation</figcaption>
+                    </figure>
+                    <h2>Sound</h2>
+                    <p>The project had a much larger focus on art, but the sound elements were also inspired by the source material's soundtrack. I worked with similar instruments, but chose to adapt the music to fit my theme further. I also chose to make the music scale vertically as the player completed more of the game, also leaving in a bridge between environments. The result was a large group of files to carefully organize, but the effect was noticable.</p>
+                    <figure>
+                        <img src="images/td-eventsheet.png" alt="Event sheet">
+                        <figcaption>Audio elements organized in event sheet</figcaption>
+                    </figure>
+                    <h2>Release</h2>
+                    <p>The game was released on indie game development website itch.io for free. Test out the game by using the link below!</p>
+                    <button onclick=" window.open('https://spletz.itch.io/shibuya-incident'), 'target: _blank' ">Try it out <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary no-grow" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Unity Platformer -->
+        <div class="modal fade" id="platform-u" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Simple Platformer</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Project Summary</h2>
+                    <p>This was the first standalone project I created in Unity, developed to experiment with asset implementation and other Unity mechanics.</p>
+                    <h2>Development</h2>
+                    <p>Up to this point I had only worked with single scene development with asset packs provided to me, but this project allowed me to experiment with exploring my own asset downloads and tweaking them to my needs. The highlights of this project were mostly in my comfort using Unity, so feel free to explore my GitHub code to see how it was made!</p>
+                    <button onclick=" window.open('https://github.com/smpletz/C292-GameTest/tree/main/Chthonic'), 'target= _blank'">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary no-grow" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-links"> <!-- Page links -->
+            <h4 class="spacer">Pages</h4>
+            <div class="foot-box">
+                <ul>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a target="_blank" href="https://github.com/smpletz">GitHub</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footer-links"> <!-- Contacts -->
+            <h4 class="spacer">Contact</h4>
+            <div class="foot-box">
+                <ul>
+                    <li>Email: <a href=mailto:“pletzsean@gmail.com”>pletzsean@gmail.com</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/sean-pletz/" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/sean-pletz</a></li>
+                </ul>
+            </div>
+            
+
+        </div>
+
+    </footer>
+    
+    <button class="toTop" onclick="location.href='#'">Back to top <i class="fa-solid fa-arrow-up"></i></button>
+    
+    <!-- Script for Navigation - hides and reveals menu items on click -->
+    <script>
+        function toggleDropdown() {
+            document.querySelectorAll('.item').forEach(item => item.classList.toggle('show'));
+        }
+        document.querySelector('.toggle').addEventListener('click', toggleDropdown);
+    </script>
+
+    <!-- JavaScript from Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+    <!-- Personal JavaScript additions -->
+    <script>
+        window.addEventListener('load', () => {
+        const scrollY = sessionStorage.getItem('scrollY');
+        if (scrollY !== null) {
+            sessionStorage.removeItem('scrollY');
+        }
+        });
+    </script>
+
+</body>
+</html>
