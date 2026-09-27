@@ -279,6 +279,37 @@ figcaption {
   justify-content: space-between;
 }
 
+.card {
+  min-width: 302px;
+  max-width: 302px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: var(--lightGrey);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card img {
+  height: 300px; 
+  object-fit: cover; 
+  object-position: 100% 0%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+/* Portfolio */
+
+.portfolio-page {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 15%;
+}
+
 .pr-card-collection {
   display: flex;
   flex-flow: column wrap;
@@ -295,27 +326,19 @@ figcaption {
   transition: 0.3s;
 }
 
-.card {
-  min-width: 302px;
-  max-width: 302px;
-  border: 1px solid black;
-  border-radius: 10px;
-  background-color: var(--lightGrey);
-  transition: 0.3s;
+.portfolio-head {
+  width: 40%;
+  max-height: fit-content;
+  background-color: #eeeeee;
+
+  position: sticky;
+  top: 5rem;
 }
 
-.card:hover, .pr-card:hover {
+.pr-card:hover {
   transform: scale(1.05);
   transition: 0.3s;
   cursor: pointer;
-}
-
-.card img {
-  height: 300px; 
-  object-fit: cover; 
-  object-position: 100% 0%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 .pr-card img {
@@ -324,6 +347,15 @@ figcaption {
   object-position: 50% 0%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+.headshot {
+  max-height: none;
+  height: 70%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 5px solid yellow;
+  object-fit: cover;
 }
 
 .card figcaption, .pr-card figcaption {
