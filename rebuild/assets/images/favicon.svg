@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Sean Pletz monogram</title>
+  <desc id="desc">A charcoal lowercase s and p joined by a blue intersection on an off-white circle.</desc>
+  <circle cx="252" cy="252" r="207" fill="#faf9f6"/>
+  <path
+    d="M311 141 C307 104 278 91 246 96 C205 102 181 137 184 172 C187 204 207 218 228 219"
+    fill="none"
+    stroke="#111211"
+    stroke-width="16"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+  <path
+    d="M228 219 C241 220 254 219 269 219"
+    fill="none"
+    stroke="#0798c7"
+    stroke-width="16"
+    stroke-linecap="round"/>
+  <path
+    d="M269 219 C303 219 324 241 324 274 C324 311 296 334 257 334 C217 334 191 308 191 273 C191 247 204 229 225 219 M191 273 L191 398"
+    fill="none"
+    stroke="#111211"
+    stroke-width="16"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+</svg>
