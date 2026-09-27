@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Adobe Firefly systems design and research case study by Sean Pletz.">
+  <meta name="author" content="Sean Pletz">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Adobe Firefly Unified Prompting | Sean Pletz">
+  <meta property="og:description" content="A systems-thinking case study creating a shared interface grammar across Adobe Firefly tools.">
+  <meta property="og:url" content="https://seanpletz.com/case-studies/adobe-firefly.html">
+  <link rel="canonical" href="https://seanpletz.com/case-studies/adobe-firefly.html">
+  <title>Adobe Firefly Unified Prompting | Sean Pletz</title>
+  <link rel="stylesheet" href="../css/styles.css?v=20260926d">
+  <script src="../js/main.js?v=20260926" defer></script>
+</head>
+<body class="case-body">
+  <a class="skip-link" href="#case-main">Skip to content</a>
+  <header class="case-header"><nav class="case-nav" aria-label="Case study navigation"><a href="../index.html">← Sean Pletz</a><div class="case-nav-links"><a href="../index.html#work">All work</a><a href="../index.html#contact">Contact</a></div></nav></header>
+  <main class="case-main" id="case-main">
+    <section class="case-hero">
+      <p class="case-kicker">Systems thinking · Interaction design · Adobe Firefly Unified Prompting</p>
+      <h1>One suite.<br>Fewer rules.</h1>
+      <p class="case-deck">A shared interface grammar for Firefly’s image, video, and audio tools (designed for both Adobe experts and prompt-first newcomers).</p>
+      <div class="case-meta">
+        <div><span>Role</span><strong>Team lead · Research synthesis · Interaction design</strong></div>
+        <div><span>Timeline</span><strong>5 weeks · 2025</strong></div>
+        <div><span>Team</span><strong>4 contributors</strong></div>
+        <div><span>Methods</span><strong>Exploratory interviews · Comparative review · Sketching</strong></div>
+      </div>
+    </section>
+    <figure class="case-visual"><img src="../assets/images/Adobe-Figma.png" alt="Adobe Firefly unified interface concept"></figure>
+
+    <section class="case-section reveal">
+      <div class="case-section-heading"><span>01 · The challenge</span><h2>Every new tool asked users to learn Firefly again.</h2></div>
+      <div class="case-copy-grid"><div>
+        <p class="pullquote">The problem was not a missing feature. It was the growing number of interface rules a user had to remember.</p>
+        <p>Adobe asked us to explore prompting patterns across Firefly’s generative tools. Image, video, and sound effects offered related capabilities, but their layouts, prompt locations, settings, and pathways between tools did not consistently behave like parts of one product.</p>
+        <p>I created the project timeline, documented early inconsistencies, helped synthesize the research, and sketched a structure that could support different media without forcing every tool into an identical screen.</p>
+      </div></div>
+      <div class="case-gallery case-gallery--evidence">
+        <figure><img src="../assets/images/Adobe-Plan.png" alt="Five-week Adobe Firefly project timeline"><figcaption>A five-week plan moved the team from product review through research, synthesis, sketching, and prototyping.</figcaption></figure>
+        <figure><img src="../assets/images/Adobe-Sketches.png" alt="Adobe Firefly interface sketches showing a collapsible settings panel and suite switcher"><figcaption>My early sketch separated stable interface regions from controls that needed to adapt by medium.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="case-section reveal">
+      <div class="case-section-heading"><span>02 · The evidence</span><h2>Beginners and Adobe experts struggled for different reasons.</h2></div>
+      <div class="case-copy-grid"><div>
+        <p class="pullquote">One group wanted fewer controls in the way. The other wanted those controls to behave more like Adobe.</p>
+        <p>The team observed people across a spectrum of Adobe and generative-AI familiarity, then compared Firefly with other Adobe products and adjacent generation tools. Prompt-first users tended to treat the properties panel as visual noise. Experienced Adobe users valued those controls, but expected a flexible side panel and stronger continuity with products they already knew.</p>
+        <p>Both groups encountered the same underlying cost: moving between tools interrupted their mental model. Prompt history disappeared, sound effects reorganized the workspace, and switching media required returning to the Firefly home screen.</p>
+      </div></div>
+      <div class="case-finding-grid" aria-label="Research synthesis">
+        <article><span>01</span><h3>Familiar, but not familiar enough</h3><p>Firefly borrowed Adobe’s visual language without consistently matching the behavior experienced users expected.</p></article>
+        <article><span>02</span><h3>Prompting had two centers</h3><p>Some users worked through language; others relied on properties. The interface needed to support both without privileging either.</p></article>
+        <article><span>03</span><h3>Tools felt separated</h3><p>Layout changes and the trip back home made related generation tools feel like isolated destinations.</p></article>
+      </div>
+    </section>
+
+    <section class="case-section reveal">
+      <div class="case-section-heading"><span>03 · The principle</span><h2>Standardize the map (not every destination).</h2></div>
+      <div class="case-copy-grid"><div>
+        <p>We chose a shared spatial model instead of one rigid template. Settings remain on the left, generated work occupies the central workspace, and prompting anchors the bottom edge. Each tool can still introduce medium-specific controls inside those predictable regions.</p>
+        <p>This reframed consistency as a transferable map. Users could carry orientation from image generation into video or sound without expecting the workflows themselves to be identical.</p>
+      </div></div>
+      <div class="case-gallery case-gallery--evidence case-gallery--blueprint"><figure><img src="../assets/images/Adobe-Structure.png" alt="Annotated Adobe Firefly layouts showing settings, workspace, and prompt regions across sound and image generation"><figcaption>The blueprint distinguishes reusable interface regions from content that changes with each medium.</figcaption></figure></div>
+    </section>
+
+    <section class="case-section reveal">
+      <div class="case-section-heading"><span>04 · The system</span><h2>Three decisions made the pattern useful.</h2></div>
+      <div class="case-copy-grid"><div>
+        <p class="pullquote">Consistency only helps when it preserves the choices people came for.</p>
+        <p>The final concept brought sound effects into the same broad layout as image and video generation. A collapsible, resizable properties panel gives experts detailed control while allowing prompt-first users to reclaim space. A switcher near the prompt keeps related tools within reach and creates a foundation for carrying work from one medium into another.</p>
+        <p>The wider team also proposed visible “thinking” feedback to distinguish model processing from interface failure and set more realistic expectations when a generation took time or returned an imperfect result.</p>
+      </div></div>
+      <div class="case-gallery case-gallery--evidence"><figure><img src="../assets/images/Adobe-Figma.png" alt="Final Adobe Firefly sound-effects concept with shared settings, workspace, and prompt regions"><figcaption>The static high-fidelity concept applies the shared grammar to sound generation while preserving its timeline and variation controls.</figcaption></figure></div>
+    </section>
+
+    <section class="case-section reveal">
+      <div class="case-section-heading"><span>05 · The response</span><h2>Adobe saw the research reflected in the system.</h2></div>
+      <div class="case-copy-grid"><div>
+        <p class="pullquote">The subtle changes balanced two very different (and very real) ways of working.</p>
+        <p>Adobe felt the layout followed our findings closely and considered it a strong redesign direction. They specifically valued that the changes were restrained: the concept made Firefly more consistent while balancing experienced Adobe users’ need for control with newcomers’ desire for a less overwhelming starting point.</p>
+        <p>The team delivered a high-fidelity static concept and presented the system to Adobe. We did not complete usability testing on the final design, so this case study treats the work as a reasoned direction (not a validated outcome).</p>
+        <p>If continuing today, I would prototype two focused tasks for both novice and experienced Adobe users: resize or dismiss the properties panel, then move an existing prompt into a second medium. I would measure orientation time, task success, incorrect navigation, and whether users understand what context carries between tools.</p>
+        <div class="case-actions">
+          <a class="button button--dark" href="https://www.figma.com/proto/YrR0TFDDYTHmMDtHwHWt5e/IDP---Project-2-Prototype-Wireframing?node-id=0-1&amp;t=XXmvLqTCXBhVgBPP-1" target="_blank" rel="noopener">Open Figma concept ↗</a>
+          <a class="button" href="../assets/docs/Adobe-Pres.pdf" target="_blank" rel="noopener">View presentation ↗</a>
+          <a class="button" href="../assets/docs/Adobe-Brief.pdf" target="_blank" rel="noopener">Read brief ↗</a>
+        </div>
+      </div></div>
+    </section>
+    <a class="next-case" href="salesforce-starter.html"><span>Next case study</span><strong>Salesforce Guided Trial →</strong></a>
+  </main>
+</body>
+</html>

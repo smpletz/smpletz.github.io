@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sean Pletz is a UX researcher and designer translating human insight into focused product decisions.">
+  <meta name="author" content="Sean Pletz">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#f3f2ee">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sean Pletz | UX Researcher &amp; Designer">
+  <meta property="og:description" content="UX research, product design, and strategy case studies by Sean Pletz.">
+  <meta property="og:url" content="https://seanpletz.com/">
+  <link rel="canonical" href="https://seanpletz.com/">
+  <title>Sean Pletz | UX Researcher &amp; Designer</title>
+  <link rel="stylesheet" href="css/styles.css?v=20260926d">
+  <script src="js/main.js?v=20260926" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-site-header>
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="nav-identity" href="#top" aria-label="Sean Pletz, back to top">
+        <img src="assets/images/Grad_PhotoZoomed.JPG" alt="" width="34" height="34">
+        <span>Sean Pletz</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <!-- PLAY TOGGLE: add the hidden attribute to this <li> and the matching
+             <section id="play"> below to disable Play without deleting it. -->
+        <li hidden><a href="#play">Play</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="assets/docs/resume.pdf" target="_blank" rel="noopener">Résumé <span aria-hidden="true">↗</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> UX researcher · designer · product thinker</p>
+        <h1 id="hero-title">Research first.<br>Better products follow.</h1>
+        <p class="hero-intro">I’m Sean, an HCI graduate student turning human behavior into clear product direction (and carrying that insight through design).</p>
+        <div class="hero-actions">
+          <a class="button button--dark" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <a class="hero-stack" href="#work" data-hero-stack aria-label="View selected work">
+        <p class="stack-note">Selected work · 2025–26</p>
+      </a>
+
+      <!-- These covers are moved by main.js from this stack to the Work cards.
+           Motion timing can be changed in the PROJECT FLIGHT section of main.js. -->
+      <div class="cover-flight-layer" aria-hidden="true">
+        <div class="flying-cover flying-cover--art" data-flying-cover="art">
+          <img src="assets/images/Art-logo.png" alt="">
+        </div>
+        <div class="flying-cover flying-cover--salesforce" data-flying-cover="salesforce">
+          <img src="assets/images/SF-Figma.png" alt="">
+        </div>
+        <div class="flying-cover flying-cover--adobe" data-flying-cover="adobe">
+          <div class="adobe-cover">
+            <div class="adobe-cover__layout">
+              <img class="adobe-cover__rail" src="assets/images/Adobe-Cover1.png" alt="">
+              <img class="adobe-cover__workspace" src="assets/images/Adobe-Cover2.png" alt="">
+              <img class="adobe-cover__prompt" src="assets/images/Adobe-Cover3.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="flying-cover flying-cover--espn" data-flying-cover="espn">
+          <img src="assets/images/ESPN-Figma.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="section work-section" id="work" aria-labelledby="work-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-index">01 / Selected work</p>
+          <h2 id="work-title">From evidence<br>to experience.</h2>
+        </div>
+        <p>Four projects showing how I frame ambiguity, listen closely, make tradeoffs, and move teams toward something tangible.</p>
+      </div>
+
+      <div class="work-grid">
+        <a class="project-card reveal" href="case-studies/espn-fantasy.html" data-project-card="espn">
+          <div class="project-media" data-cover-destination="espn">
+            <img src="assets/images/ESPN-Figma.png" alt="ESPN Fantasy community feature interface">
+            <!-- The poster remains the accessible fallback and matches the
+                 flying hero cover. The loop starts only after that cover lands. -->
+            <video class="project-loop" data-project-loop muted loop playsinline preload="metadata" poster="assets/images/ESPN-Figma.png" aria-hidden="true">
+              <source src="assets/images/ESPN-Cover.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-meta"><span>01 · Product research</span><span>2025</span></div>
+          <h3>ESPN Fantasy Social Feed</h3>
+          <p>Finding a research-backed opportunity for connection inside the fantasy sports experience.</p>
+          <span class="project-cta">View case study <span aria-hidden="true">↗</span></span>
+        </a>
+
+        <a class="project-card reveal" href="case-studies/adobe-firefly.html" data-project-card="adobe">
+          <div class="project-media" data-cover-destination="adobe">
+            <div class="adobe-cover" role="img" aria-label="Adobe Firefly interface regions assembling into a unified layout">
+              <div class="adobe-cover__layout">
+                <img class="adobe-cover__rail" src="assets/images/Adobe-Cover1.png" alt="">
+                <img class="adobe-cover__workspace" src="assets/images/Adobe-Cover2.png" alt="">
+                <img class="adobe-cover__prompt" src="assets/images/Adobe-Cover3.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="project-meta"><span>02 · UX strategy &amp; design</span><span>2025</span></div>
+          <h3>Adobe Firefly Unified Prompting</h3>
+          <p>Creating a shared interface grammar across Firefly’s image, video, and audio tools.</p>
+          <span class="project-cta">View case study <span aria-hidden="true">↗</span></span>
+        </a>
+
+        <a class="project-card reveal" href="case-studies/salesforce-starter.html" data-project-card="salesforce">
+          <div class="project-media project-media--video-contain" data-cover-destination="salesforce">
+            <img src="assets/images/SF-Figma.png" alt="Salesforce Starter marketing experience">
+            <video class="project-loop" data-project-loop muted loop playsinline preload="metadata" poster="assets/images/SF-Figma.png" aria-hidden="true">
+              <source src="assets/images/SF-Cover.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-meta"><span>03 · Conversion research</span><span>2025</span></div>
+          <h3>Salesforce Guided Trial</h3>
+          <p>Reframing marketing tools to help trial users recognize value and reach activation sooner.</p>
+          <span class="project-cta">View case study <span aria-hidden="true">↗</span></span>
+        </a>
+
+        <a class="project-card reveal" href="case-studies/the-art-market.html" data-project-card="art">
+          <div class="project-media project-media--contain" data-cover-destination="art">
+            <img src="assets/images/Art-logo.png" alt="The Art Market logo">
+          </div>
+          <div class="project-meta"><span>04 · Research to shipped product</span><span>2025–26</span></div>
+          <h3>The Art Market</h3>
+          <p>Taking a student sustainability problem from early interviews to a tested, working marketplace.</p>
+          <span class="project-cta">View case study <span aria-hidden="true">↗</span></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-index">02 / About</p>
+          <h2 id="about-title">Curious about people.<br>Serious about outcomes.</h2>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-profile reveal">
+          <img src="assets/images/Grad_Photo.JPG" alt="Sean Pletz smiling in graduation attire">
+          <div>
+            <strong>Sean Pletz</strong>
+            <span>HCI M.S. candidate · Indiana University</span>
+          </div>
+          <ul class="social-links" aria-label="Social links">
+            <li><a href="https://www.linkedin.com/in/sean-pletz/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="https://github.com/smpletz" target="_blank" rel="noopener">GitHub ↗</a></li>
+          </ul>
+        </div>
+
+        <div class="about-copy reveal">
+          <p class="about-lead">I found UX by following the part of technology that interested me most: understanding why people struggle, what they actually need, and how a team can respond.</p>
+          <p>My background crosses informatics, computer science, data science, game design, and hands-on development. That range helps me work comfortably between research, design, engineering, and product conversations (not just hand off findings at the end).</p>
+          <p>I’m currently pursuing an M.S. in Human–Computer Interaction at Indiana University, graduating in Spring 2028. I’m looking for opportunities where research has a real voice in product direction while remaining close to the people who design and build it.</p>
+
+          <div class="about-details">
+            <div><span>Focus</span><strong>UX research<br>Product discovery<br>Interaction design</strong></div>
+            <div><span>Methods</span><strong>Interviews<br>Surveys<br>Usability testing</strong></div>
+            <div><span>Also fluent in</span><strong>Prototyping<br>Front-end development<br>Team facilitation</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLAY TOGGLE: add hidden to this section and the Play <li> in the nav.
+         Remove hidden from both to re-enable it. Content cards can be added
+         inside .play-grid; the stagger is controlled in styles.css. -->
+    <section hidden class="section play-section" id="play" aria-labelledby="play-title">
+      <div class="play-heading reveal">
+        <p class="section-index">03 / Play</p>
+        <h2 id="play-title">A space for experiments,<br>side quests, and unfinished ideas.</h2>
+        <p>This section is intentionally waiting for the work that doesn’t need a brief.</p>
+      </div>
+      <div class="play-grid" aria-label="Play section placeholders">
+        <div class="play-placeholder reveal"><span>Future experiment 01</span></div>
+        <div class="play-placeholder reveal"><span>Future experiment 02</span></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-intro reveal">
+        <p class="section-index">04 / Contact</p>
+        <h2 id="contact-title">Let’s make the next question worth asking.</h2>
+        <p>I’m interested in UX research, product design, and product roles where curiosity becomes action.</p>
+        <a class="email-link" href="mailto:pletzsean@gmail.com">pletzsean@gmail.com <span aria-hidden="true">↗</span></a>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/sean-pletz/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://github.com/smpletz" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="assets/docs/resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" data-contact-form>
+        <p class="form-note">Prefer a form? This opens your email app with the message prepared (no data is sent to a hidden third-party service).</p>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <label for="message">What are you working on?</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button class="button button--dark" type="submit">Prepare email <span aria-hidden="true">↗</span></button>
+        <p class="form-status" data-form-status aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="#top">Sean Pletz</a>
+    <p>UX research · Design · Product</p>
+    <p>© <span data-year></span> Sean Pletz</p>
+  </footer>
+</body>
+</html>
