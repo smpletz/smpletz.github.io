@@ -137,7 +137,7 @@ button, input, textarea { font: inherit; }
   letter-spacing: -.072em;
   font-weight: 640;
 }
-.hero h1::first-line { color: #6f706d; }
+.hero h1::first-line { color: var(--ink); }
 .hero-intro { max-width: 600px; margin: 2rem 0 0; font-size: clamp(1.05rem, 1.65vw, 1.35rem); color: #4b4d49; line-height: 1.52; }
 .hero-actions { display: flex; align-items: center; gap: 1.4rem; margin-top: 2.25rem; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: .7rem; min-height: 50px; padding: .75rem 1.15rem; border: 1px solid var(--ink); border-radius: 999px; cursor: pointer; font-weight: 720; transition: transform .2s, background .2s, color .2s; }
